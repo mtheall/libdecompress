@@ -1,0 +1,6 @@
+*.fx2
+*.elf
+*.elf.dbg
+*.imp.a
+lib
+build
