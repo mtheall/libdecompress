@@ -20,6 +20,7 @@ void rawDecompressVram(const u8 *in, u8 *out, int size) {
     word |= (*in++)<<8;
     word |= (*in++)<<16;
     word |= (*in++)<<24;
+    *(e.buf32++) = word;
   }
   if((size - 2) >= 0) { // write a remaining halfword
     size -= 2;
